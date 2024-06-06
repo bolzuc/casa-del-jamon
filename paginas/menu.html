@@ -5,11 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú - La Casa de Jamón</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <style>
+        /* Estilos específicos para dispositivos móviles */
+        @media (max-width: 768px) {
+            header {
+                padding: 10px;
+            }
+
+            .logo img {
+                width: 120px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .grid-item {
+                margin-bottom: 20px;
+                padding: 10px;
+            }
+
+            .grid-item h3 {
+                font-size: 1.2rem;
+                color: orange; /* Cambio de color a naranja */
+            }
+
+            .grid-item p {
+                font-size: 0.9rem;
+                color: yellow; /* Cambio de color a amarillo */
+            }
+        }
+    </style>
 </head>
 <body class="page-menu">
     <header class="d-flex justify-content-between align-items-center p-3 bg-light">
         <div class="logo">
-            <img src="multimedia/nuevo-logo.png" alt="Logo La Casa de Jamón" class="img-fluid" style="width: 150px;">
+            <img src="multimedia/nuevo-logo.png" alt="Logo La Casa de Jamón" class="img-fluid">
         </div>
         <nav>
             <ul class="nav">
@@ -25,7 +61,7 @@
 
     <main>
         <section>
-            <h2>Platillos de la Casa</h2>
+            <h2 class="text-center">Platillos de la Casa</h2>
             <div class="grid-container">
                 <div class="grid-item">
                     <h3>Paella</h3>
@@ -46,7 +82,7 @@
         </section>
 
         <section>
-            <h2>Otros Platillos Españoles</h2>
+            <h2 class="text-center">Otros Platillos Españoles</h2>
             <div class="grid-container">
                 <div class="grid-item">
                     <h3>Tortilla Española</h3>
@@ -63,6 +99,7 @@
                     <p>Gambas cocidas en aceite de oliva con ajos.</p>
                     <p>Precio: $9.000 CLP</p>
                 </div>
+                <!-- Aquí van los demás platos -->
                 <div class="grid-item">
                     <h3>Calamares a la Romana</h3>
                     <p>Calamares rebozados y fritos.</p>
@@ -78,51 +115,7 @@
                     <p>Jamón curado de cerdo ibérico.</p>
                     <p>Precio: $15.000 CLP</p>
                 </div>
-                <div class="grid-item">
-                    <h3>Pimientos de Padrón</h3>
-                    <p>Pimientos verdes fritos con sal gruesa.</p>
-                    <p>Precio: $7.000 CLP</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Fabada Asturiana</h3>
-                    <p>Estofado de alubias, chorizo, morcilla y panceta.</p>
-                    <p>Precio: $11.000 CLP</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Patatas Bravas</h3>
-                    <p>Patatas fritas con salsa picante.</p>
-                    <p>Precio: $6.000 CLP</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Flan de Huevo</h3>
-                    <p>Postre de huevo, leche y azúcar.</p>
-                    <p>Precio: $5.000 CLP</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Crema Catalana</h3>
-                    <p>Postre de crema pastelera con caramelo.</p>
-                    <p>Precio: $6.000 CLP</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Queso Manchego</h3>
-                    <p>Queso curado de leche de oveja.</p>
-                    <p>Precio: $12.000 CLP</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Croquetas de Jamón</h3>
-                    <p>Croquetas rellenas de jamón y bechamel.</p>
-                    <p>Precio: $8.000 CLP</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Bacalao a la Vizcaína</h3>
-                    <p>Bacalao en salsa de pimientos y cebolla.</p>
-                    <p>Precio: $13.000 CLP</p>
-                </div>
-                <div class="grid-item">
-                    <h3>Ensalada Rusa</h3>
-                    <p>Ensalada de patata, zanahoria, guisantes, atún y mayonesa.</p>
-                    <p>Precio: $6.000 CLP</p>
-                </div>
+                <!-- Fin de los platos -->
             </div>
         </section>
     </main>
