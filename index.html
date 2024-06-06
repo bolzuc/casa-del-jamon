@@ -4,37 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Casa de Jamón</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        /* Estilos específicos para dispositivos móviles */
-        @media (max-width: 768px) {
-            .hero {
-                height: 300px; /* Reducir la altura del héroe */
-            }
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
 
-            .hero-content {
-                padding: 0 20px; /* Añadir relleno lateral */
-            }
+        .hero {
+            background-image: url('multimedia/paella.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
 
-            .btn {
-                font-size: 0.8rem; /* Reducir el tamaño de fuente del botón */
-            }
+        .hero-content {
+            padding: 20px;
+        }
 
-            .list-unstyled {
-                padding-left: 0; /* Quitar el relleno izquierdo de la lista */
-            }
+        .btn-warning {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
 
-            .list-unstyled li {
-                padding: 10px 0; /* Añadir espaciado vertical a los elementos de la lista */
-            }
+        .content {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .plato {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .plato h3 {
+            color: #ff5722; /* Naranja */
+            margin-top: 0;
+        }
+
+        .plato p {
+            margin-bottom: 10px;
+        }
+
+        .plato p:last-child {
+            margin-bottom: 0;
         }
     </style>
 </head>
 <body>
     <header class="d-flex justify-content-between align-items-center p-3 bg-light">
         <div class="logo">
-            <img src="multimedia/nuevo-logo.png" alt="Logo La Casa de Jamón" class="img-fluid" style="width: 150px;">
+            <img src="multimedia/logo.png" alt="Logo La Casa de Jamón" class="img-fluid" style="width: 150px;">
         </div>
         <nav>
             <ul class="nav">
@@ -48,26 +86,44 @@
         </nav>
     </header>
 
-    <section class="hero d-flex justify-content-center align-items-center text-center text-white" style="background-image: url('multimedia/paella.jpg'); height: 500px;">
+    <section class="hero">
         <div class="hero-content">
-            <h1 class="display-5">Bienvenido a La Casa de Jamón</h1>
+            <h1 class="display-4">Bienvenido a La Casa de Jamón</h1>
             <p class="lead">Somos un restaurante tematizado con la cultura española, especializado en deliciosos platos de comida española.</p>
             <a href="paginas/menu.html" class="btn btn-warning">Ver nuestro menú</a>
         </div>
     </section>
 
-    <main class="content container py-5">
+    <main class="content">
         <section>
             <h2 class="text-center mb-4">Nuestros Platos Destacados</h2>
-            <ul class="list-unstyled">
-                <li class="p-2">Paella</li>
-                <li class="p-2">Pulpo al Olivo</li>
-                <li class="p-2">Cola de Cerdo</li>
-            </ul>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="plato">
+                        <h3>Paella</h3>
+                        <p>Arroz con mariscos, pollo y verduras.</p>
+                        <p>Precio: $12.000 CLP</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="plato">
+                        <h3>Pulpo al Olivo</h3>
+                        <p>Pulpo cocido y aliñado con aceitunas y especias.</p>
+                        <p>Precio: $10.000 CLP</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="plato">
+                        <h3>Cola de Cerdo</h3>
+                        <p>Cola de cerdo estofada con salsa de vino tinto.</p>
+                        <p>Precio: $14.000 CLP</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="bg-dark text-white text-center py-3">
+    <footer>
         <p>&copy; 2024 La Casa de Jamón - Restaurante tematizado con la cultura española</p>
     </footer>
 </body>
