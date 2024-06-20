@@ -1,84 +1,72 @@
-@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+// assets/sass/styles.scss
 
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap');
+
+// Variables
+$primary-color: #ffc107;
+$secondary-color: #343a40;
+$text-color: #fff;
+$font-primary: 'Lobster', cursive;
+$font-secondary: 'Open Sans', sans-serif;
+
+// Mixins
+@mixin fade-in($time: 1s, $type: ease-in-out) {
+  animation: fadeIn $time $type;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Global Styles
 body {
-    font-family: 'Arial', sans-serif;
+  font-family: $font-secondary;
+  color: $secondary-color;
+  background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-primary;
+}
+
+.nav-link {
+  color: $text-color;
+  transition: color 0.3s;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.page-nuevo-local .nav-link {
+  color: $text-color;
 }
 
 header {
-    background-color: #f8f9fa;
-    padding: 1rem 2rem;
-
-    .nav-link {
-        color: #343a40;
-        transition: color 0.3s ease;
-
-        &.active {
-            font-weight: bold;
-            color: #f8d210;
-        }
-
-        &:hover {
-            color: #f8d210;
-        }
-    }
-}
-
-.hero {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 5rem 0;
-
-    h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
+  @include fade-in(1s, ease-in);
 }
 
 .container {
-    padding-top: 2rem;
+  background-color: $secondary-color;
+  color: $text-color;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    .row {
-        margin-bottom: 2rem;
-    }
-
-    form {
-        background-color: #f8f9fa;
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-        .form-label {
-            font-weight: bold;
-        }
-
-        .form-control {
-            border-radius: 4px;
-        }
-
-        .btn {
-            background-color: #343a40;
-            color: #ffffff;
-            border: none;
-            transition: background-color 0.3s ease;
-
-            &:hover {
-                background-color: #f8d210;
-                color: #343a40;
-            }
-        }
-    }
+.carousel-item img {
+  max-height: 300px;
+  object-fit: cover;
 }
 
 footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 1rem 0;
-
-    p {
-        margin: 0;
-    }
+  background-color: $secondary-color;
+  padding: 1rem;
+  color: $text-color;
+  text-align: center;
 }

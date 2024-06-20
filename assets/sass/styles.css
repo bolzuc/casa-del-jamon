@@ -1,71 +1,55 @@
-@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap");
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #343a40;
+  background-color: #f8f9fa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Lobster", cursive;
+}
+
+.nav-link {
+  color: #fff;
+  transition: color 0.3s;
+}
+.nav-link:hover {
+  color: #ffc107;
+}
+
+.page-nuevo-local .nav-link {
+  color: #fff;
 }
 
 header {
-  background-color: #f8f9fa;
-  padding: 1rem 2rem;
-}
-header .nav-link {
-  color: #343a40;
-  transition: color 0.3s ease;
-}
-header .nav-link.active {
-  font-weight: bold;
-  color: #f8d210;
-}
-header .nav-link:hover {
-  color: #f8d210;
-}
-
-.hero {
-  background-color: #343a40;
-  color: #ffffff;
-  padding: 5rem 0;
-}
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
-.hero p {
-  font-size: 1.5rem;
+  animation: fadeIn 1s ease-in;
 }
 
 .container {
-  padding-top: 2rem;
-}
-.container .row {
-  margin-bottom: 2rem;
-}
-.container form {
-  background-color: #f8f9fa;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-.container form .form-label {
-  font-weight: bold;
-}
-.container form .form-control {
-  border-radius: 4px;
-}
-.container form .btn {
   background-color: #343a40;
-  color: #ffffff;
-  border: none;
-  transition: background-color 0.3s ease;
+  color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.container form .btn:hover {
-  background-color: #f8d210;
-  color: #343a40;
+
+.carousel-item img {
+  max-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 footer {
   background-color: #343a40;
-  color: #ffffff;
-  padding: 1rem 0;
-}
-footer p {
-  margin: 0;
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
