@@ -1,0 +1,6 @@
+// Mixin para centrar elemento horizontalmente
+@mixin centrar-horizontalmente {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

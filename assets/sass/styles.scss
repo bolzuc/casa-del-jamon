@@ -1,0 +1,84 @@
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 1rem 2rem;
+
+    .nav-link {
+        color: #343a40;
+        transition: color 0.3s ease;
+
+        &.active {
+            font-weight: bold;
+            color: #f8d210;
+        }
+
+        &:hover {
+            color: #f8d210;
+        }
+    }
+}
+
+.hero {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 5rem 0;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+.container {
+    padding-top: 2rem;
+
+    .row {
+        margin-bottom: 2rem;
+    }
+
+    form {
+        background-color: #f8f9fa;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .form-label {
+            font-weight: bold;
+        }
+
+        .form-control {
+            border-radius: 4px;
+        }
+
+        .btn {
+            background-color: #343a40;
+            color: #ffffff;
+            border: none;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: #f8d210;
+                color: #343a40;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem 0;
+
+    p {
+        margin: 0;
+    }
+}

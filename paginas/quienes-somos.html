@@ -5,70 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiénes Somos - La Casa de Jamón</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="assets/sass/styles.css">
 </head>
-<body>
-    <header>
+<body class="page-quienes-somos">
+    <!-- Encabezado -->
+    <header class="d-flex justify-content-between align-items-center p-3 bg-light">
         <div class="logo">
-            <img src="../multimedia/logo.png" alt="Logo La Casa de Jamón">
+            <img src="../multimedia/logo.png" alt="Logo La Casa de Jamón" class="img-fluid" style="width: 150px;">
         </div>
         <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../paginas/menu.html">Menú</a></li>
-                <li><a href="../paginas/contacto.html">Contacto</a></li>
-                <li><a href="../paginas/reservas.html">Reservas</a></li>
-                <li><a href="../paginas/quienes-somos.html">Quienes somos</a></li>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="menu.html">Menú</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas</a></li>
+                <li class="nav-item"><a class="nav-link" href="nuevo-local.html">Nuevo Local</a></li>
+                <li class="nav-item"><a class="nav-link active" href="quienes-somos.html">Quiénes Somos</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Contenido principal -->
     <main class="container py-5">
-        <section class="mb-5">
+        <section>
             <h2 class="text-center mb-4">Quiénes Somos</h2>
-            <p class="text-center">Bienvenido a La Casa de Jamón, un restaurante dedicado a traer la auténtica experiencia de la gastronomía española a Santiago. Nuestro objetivo es ofrecer a nuestros clientes una experiencia culinaria única, llena de sabores tradicionales y eventos tematizados que reflejan la rica cultura española.</p>
-        </section>
-        
-        <section class="row mb-5">
-            <div class="col-md-6">
-                <h3>Nuestra Historia</h3>
-                <p>La Casa de Jamón nació de la pasión por la cocina española y el deseo de compartir su riqueza cultural con la comunidad local. Desde nuestros inicios, nos hemos esforzado por ofrecer platos auténticos preparados con los mejores ingredientes y técnicas tradicionales.</p>
-                <img src="../multimedia/restaurante.jpg" alt="Restaurante" class="img-fluid rounded mt-3">
+            <p class="text-center">La Casa de Jamón es más que un restaurante; es una experiencia gastronómica que celebra la cultura y los sabores de España. Desde nuestra fundación en 2000, nos hemos dedicado a ofrecer autenticidad y hospitalidad en cada plato que servimos.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="mt-4">Nuestra Misión</h3>
+                    <p>Nuestra misión es transportar a nuestros clientes a través de una experiencia culinaria única, donde cada bocado les conecte con la rica tradición gastronómica española.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mt-4">Nuestros Pilares</h3>
+                    <p>Nuestros pilares se fundamentan en la calidad de nuestros ingredientes, el respeto por las recetas tradicionales y el compromiso con un servicio excepcional. Esto nos ha permitido ser un referente de la cocina española en la región.</p>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h3>Nuestra Misión</h3>
-                <p>Ofrecer una experiencia gastronómica que trascienda lo culinario y se convierta en un viaje cultural a través de España. Cada platillo está cuidadosamente elaborado para transportar a nuestros clientes a las distintas regiones de España.</p>
-                <img src="../multimedia/chef.jpg" alt="Chef" class="img-fluid rounded mt-3">
-            </div>
-        </section>
-
-        <section class="text-center mb-5">
-            <h3>Eventos Tematizados</h3>
-            <p>Además de nuestro delicioso menú, organizamos diversos eventos tematizados que incluyen noches de flamenco, festivales de tapas y catas de vino español. Estos eventos no solo brindan entretenimiento, sino que también educan a nuestros clientes sobre la cultura y tradiciones españolas.</p>
-            <div class="d-flex justify-content-center">
-                <img src="../multimedia/evento1.jpg" alt="Evento 1" class="img-fluid rounded m-2" style="width: 45%;">
-                <img src="../multimedia/evento2.jpg" alt="Evento 2" class="img-fluid rounded m-2" style="width: 45%;">
-            </div>
-        </section>
-
-        <section class="text-center mb-5">
-            <h3>Nuestro Compromiso</h3>
-            <p>Nos comprometemos a ofrecer un servicio excepcional y una experiencia gastronómica inolvidable. Nuestro equipo está dedicado a hacer de cada visita a La Casa de Jamón una ocasión especial. Creemos en la importancia de la calidad y el detalle en cada aspecto de nuestra operación.</p>
-        </section>
-
-        <section class="row">
-            <div class="col-md-6">
-                <h3>Equipo Profesional</h3>
-                <p>Contamos con un equipo de chefs y personal de servicio altamente capacitado y apasionado por la gastronomía española. Su dedicación y amor por la cocina se reflejan en cada plato que servimos.</p>
-            </div>
-            <div class="col-md-6">
-                <h3>Ambiente Acogedor</h3>
-                <p>Nuestro restaurante está diseñado para ofrecer un ambiente cálido y acogedor, donde los clientes pueden relajarse y disfrutar de una excelente comida en buena compañía.</p>
-                <img src="../multimedia/ambiente.jpg" alt="Ambiente" class="img-fluid rounded mt-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3 class="mt-4">Nuestro Equipo</h3>
+                    <p>Contamos con un equipo apasionado de chefs expertos en la cocina española, que combinan técnicas modernas con el legado culinario de generaciones. Nos enorgullece también nuestro personal de sala, dedicado a brindar una experiencia acogedora y personalizada a cada cliente.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mt-4">La Casa de Jamón</h3>
+                    <p>Situada en el corazón de la ciudad, La Casa de Jamón no solo ofrece deliciosos platos, sino que también es un lugar donde se celebra la cultura española a través de eventos culturales, catas de vino y actividades que promueven el intercambio cultural.</p>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- Pie de página -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 La Casa de Jamón - Restaurante tematizado con la cultura española</p>
     </footer>
