@@ -1,79 +1,56 @@
-@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
+// Importar variables y mixins
+@import '_variables';
+@import '_mixins';
 
+// Componentes
+@import '_navigation';
+@import '_cards';
+@import '_hero'; 
+
+// Estilos globales
 body {
-    font-family: 'Arial', sans-serif;
+  font-family: $base-font-family;
+  color: $secondary-color;
+  background-color: $light-color;
 }
 
-header {
-    background-color: #f8f9fa;
-    padding: 1rem 2rem;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+}
 
 .nav-link {
   color: $text-color;
   transition: color 0.3s;
 
-        &:hover {
-            color: #f8d210;
-        }
-    }
+  &:hover {
+    color: $primary-color;
+  }
 }
 
-.hero {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 5rem 0;
+.page-nuevo-local .nav-link {
+  color: $text-color;
+}
 
-    h1 {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
-
-    p {
-        font-size: 1.5rem;
-    }
+header {
+  @include fade-in(1s, ease-in);
 }
 
 .container {
-    padding-top: 2rem;
+  background-color: $secondary-color;
+  color: $text-color;
+  padding: $base-spacing-unit * 2;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+}
 
-    .row {
-        margin-bottom: 2rem;
-    }
-
-    form {
-        background-color: #f8f9fa;
-        padding: 2rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-        .form-label {
-            font-weight: bold;
-        }
-
-        .form-control {
-            border-radius: 4px;
-        }
-
-        .btn {
-            background-color: #343a40;
-            color: #ffffff;
-            border: none;
-            transition: background-color 0.3s ease;
-
-            &:hover {
-                background-color: #f8d210;
-                color: #343a40;
-            }
-        }
-    }
+.carousel-item img {
+  max-height: 300px;
+  object-fit: cover;
 }
 
 footer {
-    background-color: #343a40;
-    color: #ffffff;
-    padding: 1rem 0;
-
-    p {
-        margin: 0;
-    }
+  background-color: $secondary-color;
+  padding: $base-spacing-unit;
+  color: $text-color;
+  text-align: center;
 }

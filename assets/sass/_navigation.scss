@@ -1,0 +1,48 @@
+// Estilos para la barra de navegación
+.navbar {
+    background-color: $primary-color;
+    padding: $base-spacing-unit;
+  
+    .navbar-brand {
+      font-family: $heading-font-family;
+      color: $light-color;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+  
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  
+    .navbar-nav {
+      .nav-link {
+        color: $light-color;
+        padding: $base-spacing-unit 1.5rem;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: $secondary-color;
+        }
+      }
+  
+      .dropdown-menu {
+        background-color: $primary-color;
+  
+        .dropdown-item {
+          color: $light-color;
+  
+          &:hover {
+            background-color: $secondary-color;
+          }
+        }
+      }
+    }
+  
+    .navbar-toggler {
+      background-color: $light-color;
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  }
