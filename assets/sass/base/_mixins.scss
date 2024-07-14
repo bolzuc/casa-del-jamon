@@ -1,0 +1,52 @@
+// Mixin para flexbox
+@mixin flexbox() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Mixin para texto con sombra
+  @mixin text-shadow($color: #000, $x: 0, $y: 0, $blur: 5px) {
+    text-shadow: $x $y $blur $color;
+  }
+  
+  // Mixin para transiciones
+  @mixin transition($properties...) {
+    transition: $properties;
+  }
+  
+  // Mixin para clearfix
+  @mixin clearfix() {
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+  
+  // Mixin para tamaño de fuente responsivo
+  @mixin font-size($size) {
+    font-size: $size;
+    @media screen and (max-width: 768px) {
+      font-size: $size * 0.8; // Ajuste para dispositivos móviles
+    }
+  }
+  
+  // Mixin para vendor prefixes
+  @mixin vendor-prefixes($property, $value) {
+    -webkit-#{$property}: $value;
+       -moz-#{$property}: $value;
+        -ms-#{$property}: $value;
+         -o-#{$property}: $value;
+            #{$property}: $value;
+  }
+  
+  // Mixin para animaciones
+  @mixin animation($name, $duration, $timing-function: ease, $delay: 0) {
+    animation: $name $duration $timing-function $delay;
+  }
+  
+  // Mixin para sombra
+  @mixin box-shadow($x: 0, $y: 4px, $blur: 10px, $color: rgba(0, 0, 0, 0.1)) {
+    box-shadow: $x $y $blur $color;
+  }

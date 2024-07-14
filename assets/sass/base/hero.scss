@@ -1,0 +1,20 @@
+.hero {
+    background-color: $hero-background-color;
+    color: $hero-text-color;
+    padding: $base-spacing-unit * 4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        font-size: 3rem;
+        margin-bottom: $base-spacing-unit * 2;
+    }
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: $base-spacing-unit * 2;
+    }
+}
