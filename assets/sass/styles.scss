@@ -1,137 +1,79 @@
-// Importar variables y mixins
-@import '/assets/sass/base/variables.scss';
-@import '/assets/sass/base/mixins.scss';
-@import '/assets/sass/base/hero.scss';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css';
 
-// Estilos globales
 body {
-  font-family: $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
+    font-family: 'Arial', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: $heading-font-family;
-  color: $primary-color;
-}
+header {
+    background-color: #f8f9fa;
+    padding: 1rem 2rem;
 
 .nav-link {
   color: $text-color;
   transition: color 0.3s;
 
-  &:hover {
-    color: $accent-color;
-  }
+        &:hover {
+            color: #f8d210;
+        }
+    }
 }
 
-.page-menu .nav-link {
-  color: $text-color;
-}
+.hero {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 5rem 0;
 
-header {
-  background-color: $dark-color;
-  color: $text-color;
-  padding: $base-spacing-unit * 2;
-  border-bottom: 1px solid $border-color;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
 
-.logo img {
-  width: 150px; /* Ajustar según necesidades */
+    p {
+        font-size: 1.5rem;
+    }
 }
 
 .container {
-  background-color: $light-color;
-  color: $text-color;
-  padding: $base-spacing-unit * 2;
-  border-radius: $border-radius;
-  box-shadow: $box-shadow;
-}
+    padding-top: 2rem;
 
-.card {
-  background-color: $card-background;
-  color: $text-color;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  transition: transform 0.3s ease;
+    .row {
+        margin-bottom: 2rem;
+    }
 
-  &:hover {
-    transform: translateY(-5px);
-  }
+    form {
+        background-color: #f8f9fa;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: $border-radius;
-  }
+        .form-label {
+            font-weight: bold;
+        }
 
-  .card-body {
-    padding: $base-spacing-unit;
-  }
+        .form-control {
+            border-radius: 4px;
+        }
 
-  .card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: $base-spacing-unit / 2;
-  }
+        .btn {
+            background-color: #343a40;
+            color: #ffffff;
+            border: none;
+            transition: background-color 0.3s ease;
 
-  .card-text {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
+            &:hover {
+                background-color: #f8d210;
+                color: #343a40;
+            }
+        }
+    }
 }
 
 footer {
-  background-color: $dark-color;
-  color: $text-color;
-  padding: $base-spacing-unit * 2;
-  text-align: center;
-}
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem 0;
 
-// Animaciones de entrada
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.animate__fadeIn {
-  animation: fade-in 1s ease-in;
-}
-
-.animate__fadeInUp {
-  animation: fadeInUp 1s ease-in;
-}
-
-.animate__fadeInDown {
-  animation: fadeInDown 1s ease-in;
-}
-
-.animate__zoomIn {
-  animation: zoomIn 1s ease;
-}
-
-.animate__delay-1s {
-  animation-delay: 1s;
-}
-
-.animate__delay-2s {
-  animation-delay: 2s;
-}
-
-.animate__delay-3s {
-  animation-delay: 3s;
-}
-
-.animate__delay-4s {
-  animation-delay: 4s;
-}
-
-.animate__delay-5s {
-  animation-delay: 5s;
+    p {
+        margin: 0;
+    }
 }
